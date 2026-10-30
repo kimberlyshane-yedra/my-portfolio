@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome para sa Social at Contact Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+    <!-- Header / Navigation Bar -->
+    <header>
+        <div class="logo-container">
+            <a href="home.html">
+                <img src="Logo_Icon.png" alt="My Logo" class="logo-img">
+            </a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="aboutme.html">ABOUT ME</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="skills.html">SKILLS</a></li>
+                <li><a href="contact.html" class="active">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Contact Section -->
+    <section class="contact-section" style="padding: 60px 5%; background-color: var(--bg-dark); min-height: 85vh;">
+        <h2 style="font-family: 'Anton', sans-serif; font-size: 2.8rem; text-align: center; color: var(--light-blue); margin-bottom: 40px; letter-spacing: 1px;">Contact Me</h2>
+        
+        <div class="contact-wrapper" style="max-width: 850px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px;">
+            
+            <!-- Contact Form Container -->
+            <div class="contact-form-container" style="background-color: var(--secondary-blue); padding: 40px; border-radius: 10px; border: 1px solid var(--light-blue);">
+                
+               <form action="https://api.web3forms.com/submit" method="POST" style="display: flex; flex-direction: column; gap: 30px;">
+    
+    <!-- Ang iyong Access Key galing sa Web3Forms (Mag-request ka lang sa web3forms.com ng libreng key para sa email mo) -->
+    <input type="hidden" name="access_key" value="929db7b6-76b3-448c-b7f2-7ae016c23a85">
+                    
+                    <!-- Full Name Row -->
+                    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
+                        <label for="fullname" style="flex: 1; min-width: 120px; color: var(--text-light); font-weight: 600; font-size: 1.05rem;">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required style="flex: 2.5; min-width: 250px; padding: 14px 16px; background-color: var(--bg-dark); border: 1px solid var(--light-blue); border-radius: 6px; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 0.95rem; outline: none;">
+                    </div>
+
+                    <!-- Email Row -->
+                    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
+                        <label for="email" style="flex: 1; min-width: 120px; color: var(--text-light); font-weight: 600; font-size: 1.05rem;">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required style="flex: 2.5; min-width: 250px; padding: 14px 16px; background-color: var(--bg-dark); border: 1px solid var(--light-blue); border-radius: 6px; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 0.95rem; outline: none;">
+                    </div>
+
+                    <!-- Message Row -->
+                    <div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 20px;">
+                        <label for="message" style="flex: 1; min-width: 120px; color: var(--text-light); font-weight: 600; font-size: 1.05rem; padding-top: 5px;">Message:</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required style="flex: 2.5; min-width: 250px; padding: 14px 16px; background-color: var(--bg-dark); border: 1px solid var(--light-blue); border-radius: 6px; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 0.95rem; outline: none; resize: vertical;"></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div style="text-align: center; margin-top: 10px;">
+                        <button type="submit" class="cta-button" style="border: none; cursor: pointer; font-size: 1rem; padding: 12px 40px;">Submit Button</button>
+                    </div>
+
+                </form>
+            </div>
+
+            <!-- My Social Media & Direct Email Section -->
+            <div class="social-contact-container" style="text-align: center; display: flex; flex-direction: column; gap: 20px; align-items: center;">
+                <h3 style="color: var(--accent-orange); font-family: 'Anton', sans-serif; font-size: 1.8rem; letter-spacing: 1px;">My Social Media</h3>
+                
+                <!-- Icons Row -->
+                <div style="display: flex; justify-content: center; gap: 25px; align-items: center; margin: 5px 0;">
+                    <a href="https://www.facebook.com/your-profile" target="_blank" title="Facebook" style="color: var(--light-blue); font-size: 32px; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/notylrebmik_?exln=ZzlkeHQ5bTdlcTc4" target="_blank" title="Instagram" style="color: var(--light-blue); font-size: 32px; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://github.com/kimberlyshane-yedra" target="_blank" title="GitHub" style="color: var(--light-blue); font-size: 32px; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.15)'" onmouseout="this.style.transform='scale(1)'">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+
+                <!-- Direct Email -->
+                <p style="color: var(--text-light); font-size: 1.05rem;">
+                    <strong>Email:</strong> <a href="mailto:yedrakimberlyshane16@gmail.com" style="color: var(--light-blue); text-decoration: none;">yedrakimberlyshane16@gmail.com</a>
+                </p>
+
+                <!-- Button Redirecting to HOME -->
+                <div style="margin-top: 10px;">
+                    <a href="home.html" class="cta-button" style="text-decoration: none;">BACK TO HOME</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer with Social Links -->
+    <footer>
+        <div class="footer-content">
+            <p>Email: yedrakimberlyshane16@gmail.com</p>
+            <div class="social-icons" style="margin: 15px 0; display: flex; justify-content: center; gap: 20px;">
+                <a href="https://www.facebook.com/your-profile" target="_blank" title="Facebook" style="color: var(--light-blue); font-size: 24px; text-decoration: none;">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/notylrebmik_?exln=ZzlkeHQ5bTdlcTc4" target="_blank" title="Instagram" style="color: var(--light-blue); font-size: 24px; text-decoration: none;">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <p>&copy; 2026 Kimberly Shane Yedra. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

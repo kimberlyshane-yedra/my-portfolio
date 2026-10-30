@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazine Project</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome para sa Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+    <!-- Header / Navigation Bar -->
+    <header>
+        <div class="logo-container">
+            <a href="home.html">
+                <img src="Logo_Icon.png" alt="My Logo" class="logo-img">
+            </a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="aboutme.html">ABOUT ME</a></li>
+                <li><a href="portfolio.html" class="active">PORTFOLIO</a></li>
+                <li><a href="skills.html">SKILLS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Magazine Project Page Section -->
+    <section class="project-detail-section" style="padding: 60px 3%; background-color: var(--bg-dark); min-height: 85vh;">
+        <div style="max-width: 1050px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px;">
+            
+            <!-- Project Title -->
+            <h2 style="font-family: 'Anton', sans-serif; font-size: 2.8rem; text-align: center; color: var(--light-blue); letter-spacing: 1px;">Magazine Design Project</h2>
+            
+            <!-- 4 Images na Magkakatabi sa Itaas (Hindi naka-zoom / contain) -->
+           <div style="display: grid; grid-template-columns:(5,1fr); gap:15px">
+                <div style="height: 320px; background-color: rgba(0,0,0,0.3);border-radius: 6px; background-image: url('typographybrandposterCAFE.png'); background-size: contain; background-repeat: no-repeat; background-position: center;"></div>
+    
+            </div>
+            
+            <!-- Description Section -->
+            <div style="background-color: var(--secondary-blue); padding: 30px; border-radius: 8px; border: 1px solid var(--light-blue);">
+                <p style="color: var(--accent-orange); font-family: 'Anton', sans-serif; font-size: 1.2rem; margin-bottom: 8px;">Description</p>
+                <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px;">
+                   This Typography Brand poster is a design  project that focuses on the typopgraphy such as alignment, color, heirarcy, kerning, leading, and tracking. The design is for a cafe business poster that emphasize the brand and product that the cafe offer and to attract customers to visit the cafe. This design is created using canva as an editing tool.
+                </p>
+                <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                    <a href="https://kimberlyyedra.my.canva.site/typographybrandposter" target="_blank" style="color: var(--light-blue); text-decoration: none; font-weight: 600; font-size: 0.95rem;">
+                        <i class="fa-solid fa-external-link-alt"></i> View Designs in Live Website
+                    </a>
+                </div>
+            </div>
+
+            <!-- Tools Section -->
+            <div style="display: flex; flex-direction: column; gap: 20px;">
+                <h3 style="color: var(--light-blue); font-family: 'Anton', sans-serif; font-size: 1.5rem; letter-spacing: 0.5px;">Tools</h3>
+                
+                <!-- Tools Image Containers -->
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+                    
+                    <div style="height: 120px; background-color: rgba(0,0,0,0.3); border-radius: 6px; background-image: url('canva.png'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center;"></div>
+                </div>
+            </div>
+            
+            <!-- Tandaan: Tinanggal na ang mga imahe sa ibaba gaya ng gusto mo, kaya dulo na ito bago ang footer -->
+
+        </div>
+    </section>
+
+    <!-- Footer with Social Links -->
+    <footer>
+        <div class="footer-content">
+            <p>Email: yedrakimberlyshane16@gmail.com</p>
+            <div class="social-icons" style="margin: 15px 0; display: flex; justify-content: center; gap: 20px;">
+                <a href="https://www.facebook.com/your-profile" target="_blank" title="Facebook" style="color: var(--light-blue); font-size: 24px; text-decoration: none;">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/notylrebmik_?exln=ZzlkeHQ5bTdlcTc4" target="_blank" title="Instagram" style="color: var(--light-blue); font-size: 24px; text-decoration: none;">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <p>&copy; 2026 Kimberly Shane Yedra. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

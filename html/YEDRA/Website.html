@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA Visualizer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome para sa Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+    <!-- Header / Navigation Bar -->
+    <header>
+        <div class="logo-container">
+            <a href="home.html">
+                <img src="Logo_Icon.png" alt="My Logo" class="logo-img">
+            </a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="aboutme.html">ABOUT ME</a></li>
+                <li><a href="portfolio.html" class="active">PORTFOLIO</a></li>
+                <li><a href="skills.html">SKILLS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Project 1 Page Section -->
+    <section class="project-detail-section" style="padding: 60px 3%; background-color: var(--bg-dark); min-height: 85vh;">
+        <div style="max-width: 1050px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px;">
+            
+            <!-- Project Title (TEXT #5) -->
+            <h2 style="font-family: 'Anton', sans-serif; font-size: 2.8rem; text-align: center; color: var(--light-blue); letter-spacing: 1px;">Website Project</h2>
+            
+            <!-- Image of the Project (Malaking Box sa Taas) -->
+          <div style="width: 100%;">
+                <video controls style="width: 100%; height: 400px; object-fit: cover; background-color: #000; border: 1px solid var(--light-blue); border-radius: 8px;">
+                    <source src="web.mp4" type="video/mp4">
+                  not supported.
+                </video>
+            </div>
+            <!-- Text #6 / Short Description na may GitHub & APK Links -->
+            <div style="background-color: var(--secondary-blue); padding: 30px; border-radius: 8px; border: 1px solid var(--light-blue);">
+                <p style="color: var(--accent-orange); font-family: 'Anton', sans-serif; font-size: 1.2rem; margin-bottom: 8px;">Description</p>
+                <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px;">
+                   This website project is a e-commerce catalog for women and men bags with nail care services, where it allows users to log-in and sign-up and scroll through the catalogof products and services, it also have a admin log-in wheere it allows the admin to add, edit, delete, and update producst and users in the database. It uses html, css, javascript, and php for the front-end nad back-end deveopment.
+                </p>
+                <!-- Links para sa GitHub at APK sa loob ng description box -->
+                <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                    <a href="https://github.com/kimberlyshane-yedra/WebsiteProject.git" target="_blank" style="color: var(--light-blue); text-decoration: none; font-weight: 600; font-size: 0.95rem;">
+                        <i class="fa-brands fa-github"></i> Github Repo
+                    <a href="http://localhost/Final_Project/index.html" target="_blank" style="color: var(--accent-orange); text-decoration: none; font-weight: 600; font-size: 0.95rem;">
+                        <i class="fa-brands fa-globe"></i> Live Website Access
+                    </a>
+                  
+                </div>
+            </div>
+
+            <!-- Tools (TEXT #7) Section (Gaya ng huli mong pinadalang format) -->
+            <div style="display: flex; flex-direction: column; gap: 20px;">
+                <h3 style="color: var(--light-blue); font-family: 'Anton', sans-serif; font-size: 1.5rem; letter-spacing: 0.5px;">Tools</h3>
+                
+                <!-- 3 Small Image Containers -->
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+                    <div style="height: 120px; background-color: rgba(0,0,0,0.3); border-radius: 6px; background-image: url('html.png'); background-size: cover; background-position: center ; display: flex; align-items: center; justify-content: center;"></div>
+                    <div style="height: 120px; background-color: rgba(0,0,0,0.3); border-radius: 6px; background-image: url('css.png'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center;"></div>
+                    <div style="height: 120px; background-color: rgba(0,0,0,0.3); border-radius: 6px; background-image: url('js.png'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center;"></div>
+                    <div style="height: 120px; background-color: rgba(0,0,0,0.3); border-radius: 6px; background-image: url('php.png'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center;"></div>
+                </div>
+            </div>
+
+            <!-- Single Large Bottom Image Container para sa mga Screenshots -->
+            <div style="display: flex; flex-direction: column; gap: 20px;">
+                <div style="height: 350px; background-color: rgba(0,0,0,0.3); border: 1px solid var(--light-blue); background-image: url('treads.png'); background-size: contain; background-repeat: no-repeat; background-position: center; border-radius: 6px;"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer with Social Links -->
+    <footer>
+        <div class="footer-content">
+            <p>Email: yedrakimberlyshane16@gmail.com</p>
+            <div class="social-icons" style="margin: 15px 0; display: flex; justify-content: center; gap: 20px;">
+                <a href="https://www.facebook.com/your-profile" target="_blank" title="Facebook" style="color: var(--light-blue); font-size: 24px; text-decoration: none;">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/notylrebmik_?exln=ZzlkeHQ5bTdlcTc4" target="_blank" title="Instagram" style="color: var(--light-blue); font-size: 24px; text-decoration: none;">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <p>&copy; 2026 Kimberly Shane Yedra. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

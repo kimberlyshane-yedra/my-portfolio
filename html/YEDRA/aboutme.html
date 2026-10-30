@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome para sa Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+    <!-- Header / Navigation Bar -->
+    <header>
+        <div class="logo-container">
+            <a href="home.html">
+                <img src="Logo_Icon.png" alt="My Logo" class="logo-img">
+            </a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about.html" class="active">ABOUT ME</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="skills.html">SKILLS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Me Section -->
+    <section class="about-section" style="padding: 60px 5%; background-color: var(--bg-dark); min-height: 80vh;">
+        <h2 style="font-family: 'Anton', sans-serif; font-size: 2.5rem; text-align: center; color: var(--light-blue); margin-bottom: 40px;">About Me</h2>
+        
+        <div class="about-wrapper" style="max-width: 1000px; margin: 0 auto; display: flex; flex-direction: column; gap: 30px;">
+            
+            <!-- ROW 1: Brief Bio (Image sa Kaliwa, Text sa Kanang Gilid) -->
+           <div class="about-row" style="display: flex; flex-wrap: wrap; gap: 30px; align-items: center;"> 
+                <!-- Left: Picture Container -->
+                <div style="flex: 1; min-width: 250px; height: 220px; background-color: rgba(0,0,0,0.3);border-radius: 6px; background-image: url('profile.jpg'); background-size: cover; background-position: center 5%;">
+                </div>
+                <!-- Right: Brief Bio Text -->
+                <div style="flex: 1.5; min-width: 280px;">
+                    <h3 style="color: var(--accent-orange); font-size: 1.3rem; margin-bottom: 10px;">Who I am/What inspire me</h3>
+                    <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.6;">
+                        Hi! I am Kimberly Shane Yedra, a Computer Science student at City College of Calamba. I am passionate about crafting user-friendly applications, designing intuitive user interfaces, and expanding my knowledge in technology and development. What inspire me is how the generation today is evolving rapidly in the field of technology, it making me think about the future possibilities.
+                    </p>
+                </div>
+            </div>
+
+            <!-- ROW 2: Education (Text sa Kaliwa, Education Image Container sa Kanang Gilid) -->
+            <div class="about-row" style="display: flex; flex-wrap: wrap; gap: 30px; align-items: center; padding: 25px; border-radius: 8px;">
+                <!-- Left: Education Details Text -->
+                <div style="flex: 1.5; min-width: 280px;">
+                    <h3 style="color: var(--light-blue); font-size: 1.3rem; margin-bottom: 10px;"><i class="fa-solid fa-graduation-cap" style="margin-right: 8px;"></i> Academic Background</h3>
+                    <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.6; margin-bottom: 8px;">
+                        <strong>Bachelor of Science in Computer Science</strong><br>
+                        City College of Calamba (current 3rd Year Student)<br>
+                          <strong>Hummanities and Social Sciences</strong><br>
+                          Makiling Integrated School(Senior High School)
+                    </p>
+                    <p style="color: #b0b0b0; font-size: 0.9rem; line-height: 1.5;">
+                        Focusing on core computer science subjects, database administration, mobile app development, and systems design.
+                    </p>
+                </div>
+                <!-- Right: Education/Field Image Container -->
+                <div style="flex: 1; min-width: 250px; height: 200px; background-color: rgba(0,0,0,0.3); border-radius: 6px; background-image: url('education.jpg'); background-size: cover; background-position: center;">
+                </div>
+            </div>
+
+            <!-- ROW 3: Skills Summary / Short Summary Container -->
+            <div class="about-row" style="background-color: var(--secondary-blue); padding: 25px; border-radius: 8px; border: 1px solid var(--light-blue); text-align: center;">
+                <h3 style="color: var(--accent-orange); font-size: 1.3rem; margin-bottom: 10px;">Skills Summary</h3>
+                <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.6; max-width: 800px; margin: 0 auto;">
+                   I have basic knowledge about SQL, programming languages (Dart, Python, Assembly), and designing user interfaces or graphic designs.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer with Social Links -->
+    <footer>
+        <div class="footer-content">
+            <p>Email: yedrakimberlyshane16@gmail.com</p>
+            <div class="social-icons" style="margin: 15px 0; display: flex; justify-content: center; gap: 20px;">
+                <a href="https://www.facebook.com/your-profile" target="_blank" title="Facebook" style="color: var(--light-blue); font-size: 24px; text-decoration: none;">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/notylrebmik_?exln=ZzlkeHQ5bTdlcTc4" target="_blank" title="Instagram" style="color: var(--light-blue); font-size: 24px; text-decoration: none;">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <p>&copy; 2026 Kimberly Shane Yedra. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

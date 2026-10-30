@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Kimberly Shane Yedra</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome para sa Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="home.css">
+
+    <style>
+        /* Lightbox / Modal Overlay Styling */
+        .modal {
+            display: none; 
+            position: fixed; 
+            z-index: 1000; 
+            padding-top: 50px; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            overflow: auto; 
+            background-color: rgba(0, 0, 0, 0.85); 
+            backdrop-filter: blur(5px);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 80vh;
+            object-fit: contain;
+            border: 2px solid var(--light-blue);
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.8);
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 25px;
+            right: 35px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .close-btn:hover {
+            color: var(--accent-orange);
+        }
+
+        .cert-img-thumb {
+            cursor: pointer;
+            transition: transform 0.2s ease, opacity 0.2s ease;
+        }
+
+        .cert-img-thumb:hover {
+            transform: scale(1.02);
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navigation Bar -->
+    <header>
+        <div class="logo-container">
+            <a href="home.html">
+                <img src="Logo_Icon.png" alt="My Logo" class="logo-img">
+            </a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="aboutme.html">ABOUT ME</a></li>
+                <li><a href="portfolio.html" class="active">PORTFOLIO</a></li>
+                <li><a href="skills.html">SKILLS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Portfolio / 9 Project Boxes Section -->
+    <section class="portfolio-section" style="padding: 60px 5%; background-color: var(--bg-dark); min-height: auto;">
+        <h2 style="font-family: 'Anton', sans-serif; font-size: 2.8rem; text-align: center; color: var(--light-blue); margin-bottom: 40px; letter-spacing: 1px;">Projects</h2>
+        
+        <div class="projects-grid" style="max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+            
+            <!-- Project 1 -->
+            <div class="project-card" style="background-color: var(--secondary-blue); border: 1px solid var(--light-blue); border-radius: 10px; padding: 15px; display: flex; flex-direction: column;">
+                <a href="DSA.html" target="_blank" style="text-decoration: none;">
+                    <div style="background-image: url('DSA.png'); background-size: cover; background-position: center; height: 180px; border-radius: 6px; border: 1px solid var(--light-blue);"></div>
+                </a>
+                <h3 style="color: var(--accent-orange); font-family: 'Anton', sans-serif; font-size: 1.3rem; margin-top: 15px; text-align: center;">DSA Visualizer</h3>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card" style="background-color: var(--secondary-blue); border: 1px solid var(--light-blue); border-radius: 10px; padding: 15px; display: flex; flex-direction: column;">
+                <a href="LandingPage.html" target="_blank" style="text-decoration: none;">
+                    <div style="background-image: url('LandingPage.png'); background-size: cover; background-position: center; height: 180px; border-radius: 6px; border: 1px solid var(--light-blue);"></div>
+                </a>
+                <h3 style="color: var(--accent-orange); font-family: 'Anton', sans-serif; font-size: 1.3rem; margin-top: 15px; text-align: center;">Urban Threads Landing Page</h3>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card" style="background-color: var(--secondary-blue); border: 1px solid var(--light-blue); border-radius: 10px; padding: 15px; display: flex; flex-direction: column;">
+                <a href="Website.html" target="_blank" style="text-decoration: none;">
+                    <div style="background-image: url('Website.png'); background-size: cover; background-position: center; height: 180px; border-radius: 6px; border: 1px solid var(--light-blue);"></div>
+                </a>
+                <h3 style="color: var(--accent-orange); font-family: 'Anton', sans-serif; font-size: 1.3rem; margin-top: 15px; text-align: center;">Website Project</h3>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card" style="background-color: var(--secondary-blue); border: 1px solid var(--light-blue); border-radius: 10px; padding: 15px; display: flex; flex-direction: column;">
+                <a href="Magazine.html" target="_blank" style="text-decoration: none;">
+                    <div style="background-image: url('Magazine.png'); background-size: cover; background-position: center; height: 180px; border-radius: 6px; border: 1px solid var(--light-blue);"></div>
+                </a>
+                <h3 style="color: var(--accent-orange); font-family: 'Anton', sans-serif; font-size: 1.3rem; margin-top: 15px; text-align: center;">Magazine</h3>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-card" style="background-color: var(--secondary-blue); border: 1px solid var(--light-blue); border-radius: 10px; padding: 15px; display: flex; flex-direction: column;">
+                <a href="DigitalMarketingGraphics.html" target="_blank" style="text-decoration: none;">
+                    <div style="background-image: url('digitalmarketinggraphics.png'); background-size: cover; background-position: center; height: 180px; border-radius: 6px; border: 1px solid var(--light-blue);"></div>
+                </a>
+                <h3 style="color: var(--accent-orange); font-family: 'Anton', sans-serif; font-size: 1.3rem; margin-top: 15px; text-align: center;">Digital Marketing Graphics</h3>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="project-card" style="background-color: var(--secondary-blue); border: 1px solid var(--light-blue); border-radius: 10px; padding: 15px; display: flex; flex-direction: column;">
+                <a href="TypographyBrandPosterCAFE.html" target="_blank" style="text-decoration: none;">
+                    <div style="background-image: url('typographybrandposterCAFE.png'); background-size: cover; background-position: center; height: 180px; border-radius: 6px; border: 1px solid var(--light-blue);"></div>
+                </a>
+                <h3 style="color: var(--accent-orange); font-family: 'Anton', sans-serif; font-size: 1.3rem; margin-top: 15px; text-align: center;">Typography & Brand Poster</h3>
+            </div>
+
+            <!-- Project 7 -->
+            <div class="project-card" style="background-color: var(--secondary-blue); border: 1px solid var(--light-blue); border-radius: 10px; padding: 15px; display: flex; flex-direction: column;">
+                <a href="Logo_Icon.html" target="_blank" style="text-decoration: none;">
+                    <div style="background-image: url('Logo_Icon.jpg'); background-size: cover; background-position: center; height: 180px; border-radius: 6px; border: 1px solid var(--light-blue);"></div>
+                </a>
+                <h3 style="color: var(--accent-orange); font-family: 'Anton', sans-serif; font-size: 1.3rem; margin-top: 15px; text-align: center;">Logo & Icon Design</h3>
+            </div>
+
+            <!-- Project 8 -->
+            <div class="project-card" style="background-color: var(--secondary-blue); border: 1px solid var(--light-blue); border-radius: 10px; padding: 15px; display: flex; flex-direction: column;">
+                <a href="Poster.html" target="_blank" style="text-decoration: none;">
+                    <div style="background-image: url('Poster.png'); background-size: cover; background-position: center; height: 180px; border-radius: 6px; border: 1px solid var(--light-blue);"></div>
+                </a>
+                <h3 style="color: var(--accent-orange); font-family: 'Anton', sans-serif; font-size: 1.3rem; margin-top: 15px; text-align: center;">Posters</h3>
+            </div>
+
+            <!-- Project 9 -->
+            <div class="project-card" style="background-color: var(--secondary-blue); border: 1px solid var(--light-blue); border-radius: 10px; padding: 15px; display: flex; flex-direction: column;">
+                <a href="Flyers.html" target="_blank" style="text-decoration: none;">
+                    <div style="background-image: url('Flyers.jpg'); background-size: cover; background-position: center; height: 180px; border-radius: 6px; border: 1px solid var(--light-blue);"></div>
+                </a>
+                <h3 style="color: var(--accent-orange); font-family: 'Anton', sans-serif; font-size: 1.3rem; margin-top: 15px; text-align: center;">Flyers</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CERTIFICATES SECTION -->
+    <section class="certificates-section" style="padding: 40px 5% 60px 5%; background-color: var(--bg-dark);">
+        <div style="max-width: 1100px; margin: 0 auto;">
+            <h2 style="font-family: 'Anton', sans-serif; font-size: 2.8rem; text-align: center; color: var(--light-blue); margin-bottom: 40px; letter-spacing: 1px;">CERTIFICATES</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
+                
+                <!-- Certificate 1 -->
+                <div style="background-color: var(--secondary-blue); border: 1px solid var(--light-blue); border-radius: 10px; padding: 20px; display: flex; flex-direction: column; gap: 15px;">
+                    <h3 style="color: var(--accent-orange); font-family: 'Anton', sans-serif; font-size: 1.2rem; text-align: center;">Copy-Paste</h3>
+                    <div style="height: 220px; background-color: rgba(0,0,0,0.4); border-radius: 6px; padding: 10px; border: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center;">
+                        <img src="copypaste.png" alt="Certificate 1" class="cert-img-thumb" onclick="openModal(this.src)" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 4px;">
+                    </div>
+                </div>
+
+                <!-- Certificate 2 -->
+                <div style="background-color: var(--secondary-blue); border: 1px solid var(--light-blue); border-radius: 10px; padding: 20px; display: flex; flex-direction: column; gap: 15px;">
+                    <h3 style="color: var(--accent-orange); font-family: 'Anton', sans-serif; font-size: 1.2rem; text-align: center;">Operating Systems Basics</h3>
+                    <div style="height: 220px; background-color: rgba(0,0,0,0.4); border-radius: 6px; padding: 10px; border: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center;">
+                        <img src="os.png" alt="Certificate 2" class="cert-img-thumb" onclick="openModal(this.src)" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 4px;">
+                    </div>
+                </div>
+
+                <!-- Certificate 3 -->
+                <div style="background-color: var(--secondary-blue); border: 1px solid var(--light-blue); border-radius: 10px; padding: 20px; display: flex; flex-direction: column; gap: 15px;">
+                    <h3 style="color: var(--accent-orange); font-family: 'Anton', sans-serif; font-size: 1.2rem; text-align: center;">Cyber Hygiene</h3>
+                    <div style="height: 220px; background-color: rgba(0,0,0,0.4); border-radius: 6px; padding: 10px; border: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center;">
+                        <img src="cyber.png" alt="Certificate 3" class="cert-img-thumb" onclick="openModal(this.src)" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 4px;">
+                    </div>
+                </div>
+
+                <!-- Certificate 4 -->
+                <div style="background-color: var(--secondary-blue); border: 1px solid var(--light-blue); border-radius: 10px; padding: 20px; display: flex; flex-direction: column; gap: 15px;">
+                    <h3 style="color: var(--accent-orange); font-family: 'Anton', sans-serif; font-size: 1.2rem; text-align: center;">The Ultimate Firewall</h3>
+                    <div style="height: 220px; background-color: rgba(0,0,0,0.4); border-radius: 6px; padding: 10px; border: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center;">
+                        <img src="firewall.png" alt="Certificate 4" class="cert-img-thumb" onclick="openModal(this.src)" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 4px;">
+                    </div>
+                </div>
+
+                <!-- Certificate 5 -->
+                <div style="background-color: var(--secondary-blue); border: 1px solid var(--light-blue); border-radius: 10px; padding: 20px; display: flex; flex-direction: column; gap: 15px;">
+                    <h3 style="color: var(--accent-orange); font-family: 'Anton', sans-serif; font-size: 1.2rem; text-align: center;">FinTech</h3>
+                    <div style="height: 220px; background-color: rgba(0,0,0,0.4); border-radius: 6px; padding: 10px; border: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center;">
+                        <img src="fintech.png" alt="Certificate 5" class="cert-img-thumb" onclick="openModal(this.src)" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 4px;">
+                    </div>
+                </div>
+
+                <!-- Certificate 6 -->
+                <div style="background-color: var(--secondary-blue); border: 1px solid var(--light-blue); border-radius: 10px; padding: 20px; display: flex; flex-direction: column; gap: 15px;">
+                    <h3 style="color: var(--accent-orange); font-family: 'Anton', sans-serif; font-size: 1.2rem; text-align: center;">Self-Management</h3>
+                    <div style="height: 220px; background-color: rgba(0,0,0,0.4); border-radius: 6px; padding: 10px; border: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center;">
+                        <img src="management.png" alt="Certificate 6" class="cert-img-thumb" onclick="openModal(this.src)" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 4px;">
+                    </div>
+                </div>
+
+                <!-- Certificate 7 -->
+                <div style="background-color: var(--secondary-blue); border: 1px solid var(--light-blue); border-radius: 10px; padding: 20px; display: flex; flex-direction: column; gap: 15px;">
+                    <h3 style="color: var(--accent-orange); font-family: 'Anton', sans-serif; font-size: 1.2rem; text-align: center;">Self-Presentation</h3>
+                    <div style="height: 220px; background-color: rgba(0,0,0,0.4); border-radius: 6px; padding: 10px; border: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center;">
+                        <img src="presentation.png" alt="Certificate 7" class="cert-img-thumb" onclick="openModal(this.src)" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 4px;">
+                    </div>
+                </div>
+
+                <!-- Certificate 8 -->
+                <div style="background-color: var(--secondary-blue); border: 1px solid var(--light-blue); border-radius: 10px; padding: 20px; display: flex; flex-direction: column; gap: 15px;">
+                    <h3 style="color: var(--accent-orange); font-family: 'Anton', sans-serif; font-size: 1.2rem; text-align: center;">Effective Speaking & Listening Skills</h3>
+                    <div style="height: 220px; background-color: rgba(0,0,0,0.4); border-radius: 6px; padding: 10px; border: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center;">
+                        <img src="effective.png" alt="Certificate 8" class="cert-img-thumb" onclick="openModal(this.src)" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 4px;">
+                    </div>
+                </div>
+
+                <!-- Certificate 9 -->
+                <div style="background-color: var(--secondary-blue); border: 1px solid var(--light-blue); border-radius: 10px; padding: 20px; display: flex; flex-direction: column; gap: 15px;">
+                    <h3 style="color: var(--accent-orange); font-family: 'Anton', sans-serif; font-size: 1.2rem; text-align: center;">Interpersonal Skills</h3>
+                    <div style="height: 220px; background-color: rgba(0,0,0,0.4); border-radius: 6px; padding: 10px; border: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center;">
+                        <img src="interpresonal.png" alt="Certificate 9" class="cert-img-thumb" onclick="openModal(this.src)" style="max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 4px;">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- LIGHTBOX MODAL CONTAINER -->
+    <div id="certModal" class="modal" onclick="closeModal()">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="imgModalTarget">
+    </div>
+
+    <!-- Footer with Social Links -->
+    <footer>
+        <div class="footer-content">
+            <p>Email: yedrakimberlyshane16@gmail.com</p>
+            <div class="social-icons" style="margin: 15px 0; display: flex; justify-content: center; gap: 20px;">
+                <a href="https://www.facebook.com/your-profile" target="_blank" title="Facebook" style="color: var(--light-blue); font-size: 24px; text-decoration: none;">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/notylrebmik_?exln=ZzlkeHQ5bTdlcTc4" target="_blank" title="Instagram" style="color: var(--light-blue); font-size: 24px; text-decoration: none;">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <p>&copy; 2026 Kimberly Shane Yedra. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPT FOR LIGHTBOX INTERACTION -->
+    <script>
+        function openModal(imageSrc) {
+            var modal = document.getElementById("certModal");
+            var modalImg = document.getElementById("imgModalTarget");
+            modal.style.display = "block";
+            modalImg.src = imageSrc;
+        }
+
+        function closeModal() {
+            var modal = document.getElementById("certModal");
+            modal.style.display = "none";
+        }
+    </script>
+
+</body>
+</html>

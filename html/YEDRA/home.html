@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="home.css">
+
+    <style>
+        /* Promotional Popup Overlay Styling - Naka-center at sakto ang laki */
+        .promo-overlay {
+            display: flex;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(5px);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .promo-box {
+            position: relative;
+            width: 100%;
+            max-width: 320px; /* Pinaliit para hindi lumagpas sa screen */
+            background-color: var(--secondary-blue, #1a1a1a);
+            border: 2px solid var(--light-blue, #00d2ff);
+            border-radius: 12px;
+            padding: 15px;
+            box-shadow: 0 0 25px rgba(0,0,0,0.8);
+            text-align: center;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 177.78%; /* 9:16 Aspect Ratio para sa YouTube Shorts */
+            height: 0;
+            background-color: #000;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-top: 5px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Close (X) Button */
+        .promo-close {
+            position: absolute;
+            top: 8px;
+            right: 12px;
+            color: #fff;
+            font-size: 26px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            z-index: 10;
+        }
+
+        .promo-close:hover {
+            color: var(--accent-orange, #ff5722);
+        }
+
+        /* Skip Button */
+        .promo-skip-btn {
+            margin-top: 12px;
+            background-color: transparent;
+            border: 1px solid var(--light-blue, #00d2ff);
+            color: var(--light-blue, #00d2ff);
+            padding: 6px 16px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .promo-skip-btn:hover {
+            background-color: var(--light-blue, #00d2ff);
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Promotional Video Overlay Popup -->
+    <div id="promoOverlay" class="promo-overlay">
+        <div class="promo-box">
+            <!-- Close 'X' Button -->
+            <span class="promo-close" onclick="closePromo()">&times;</span>
+            
+            <!-- YouTube Shorts Embed -->
+            <div class="video-container">
+                <iframe id="promoIframe" src="https://www.youtube.com/embed/kGu7PX_4VJs?autoplay=1&mute=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            
+            <!-- Skip Button -->
+            <div>
+                <button class="promo-skip-btn" onclick="closePromo()">Skip / Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Navigation Bar -->
+   <header>
+        <div class="logo-container">
+            <a href="home.html">
+                <img src="Logo_Icon.png" alt="My Logo" class="logo-img">
+            </a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="aboutme.html">ABOUT ME</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="skills.html">SKILLS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-landscape">
+        <div class="hero-overlay"></div>
+        <div class="hero-center-content">
+            <h1 class="text-1">Welcome to My Portfolio</h1>
+            <p class="brief-bio">Hi, I am Kimberly Shane Yedra. Welcome to my portfolio, explore information about me, my projects, skills, and contacts.</p>
+            <a href="aboutme.html" class="cta-button">LEARN MORE</a>
+        </div>
+    </section>
+
+   <!-- Featured Projects Section -->
+    <section class="featured-section">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <a href="https://github.com/Judandrew/DSA-Interactive-Visualizer/tree/Timer" target="_blank">
+                    <div class="thumbnail-placeholder" style="background-image: url('DSA.png'); background-size:contain; background-position: center; background-repeat: no-repeat">
+                    </div>
+                </a>
+                <h3>DSA Visualizer</h3>
+                <div class="project-action-links" style="margin-top: 10px; font-size: 0.85rem;">
+                    <a href="https://github.com/Judandrew/DSA-Interactive-Visualizer.git" target="_blank" style="color: var(--light-blue); text-decoration: none; margin-right: 12px; font-weight: 600;">GitHub Repo</a>
+                    <a href="app-debug.apk" target="_blank" style="color: var(--accent-orange); text-decoration: none; font-weight: 600;">Download APK</a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <a href="http://6a9c4728c55b3.site123.me" target="_blank">
+                    <div class="thumbnail-placeholder" style="background-image: url('LandingPage.png'); background-size:contain; background-position: center; background-repeat: no-repeat">
+                    </div>
+                </a>
+                <h3>Landing Page</h3>
+                <div class="project-action-links" style="margin-top: 10px; font-size: 0.85rem;">
+                    <a href="http://6a9c4728c55b3.site123.me" target="_blank" style="color: var(--accent-orange); text-decoration: none; font-weight: 600;">Direct to Landing Page</a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <a href="http://localhost/Final_Project/index.html" target="_blank">
+                    <div class="thumbnail-placeholder" style="background-image: url('Website.png'); background-size:contain; background-position: center; background-repeat: no-repeat">
+                    </div>
+                </a>
+                <h3>Website</h3>
+                <div class="project-action-links" style="margin-top: 10px; font-size: 0.85rem;">
+                    <a href="https://github.com/kimberlyshane-yedra/WebsiteProject.git" target="_blank" style="color: var(--light-blue); text-decoration: none; margin-right: 12px; font-weight: 600;">GitHub Repo</a>
+                    <a href="http://localhost/Final_Project/index.html" target="_blank" style="color: var(--accent-orange); text-decoration: none; font-weight: 600;">Access Website</a>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card">
+                <a href="https://www.facebook.com/share/p/1BRyFz3UT4/" target="_blank">
+                    <div class="thumbnail-placeholder" style="background-image: url('SocialMediaPost.png'); background-size:contain; background-position: center; background-repeat: no-repeat">
+                    </div>
+                </a>
+                <h3>Website</h3>
+                <div class="project-action-links" style="margin-top: 10px; font-size: 0.85rem;">
+                    <a href="https://www.facebook.com/share/p/1BRyFz3UT4/" target="_blank" style="color: var(--accent-orange); text-decoration: none; font-weight: 600;">Access Social Media Post</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>Email: yedrakimberlyshane16@gmail.com</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/your-profile" target="_blank" title="Facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/notylrebmik_?exln=ZzlkeHQ5bTdlcTc4" target="_blank" title="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <p>&copy; 2026 Kimberly Shane Yedra. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Inayos na Script para tuluyang mapatay ang tunog at audio -->
+    <script>
+        function closePromo() {
+            var overlay = document.getElementById("promoOverlay");
+            var iframe = document.getElementById("promoIframe");
+            
+            // Itinatago ang popup
+            overlay.style.display = "none";
+            
+            // Tinatanggal ang source ng iframe para tuluyang huminto at mawala ang audio sa background
+            iframe.src = ""; 
+        }
+    </script>
+
+</body>
+</html>
